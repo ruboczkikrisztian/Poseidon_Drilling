@@ -1,6 +1,5 @@
 import React from 'react';
-
-import { AboutMe, FindUs, Footer, Gallery, Header, Services, Information } from './container';
+import { AboutMe, FindUs, Footer, Gallery, Header, Services, Information} from './container';
 import { Navbar } from './components';
 import './App.css';
 

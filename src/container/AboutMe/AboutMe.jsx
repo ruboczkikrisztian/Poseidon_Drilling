@@ -13,7 +13,7 @@ const AboutMe = () => (
 
     <div className='app__wrapper_info'>
       <SubHeading title="Bemutatkozás"/>
-      <h1 className='headtext__cormorant'>Amiben én hiszek</h1>
+      <h1 className='headtext__cormorant'>Hadd mutatkozzak be</h1>
 
       <div className='app__chef-content'>
         <div className='app__chef-content_quote'>
@@ -25,7 +25,7 @@ const AboutMe = () => (
 
       <div className='app__chef-sign'>
         <p>Látó Izsák</p>
-        <p className='p__opensans'>Cégtulajdonos</p>
+        <p className='p__opensans'>Alapító</p>
       </div>
 
     </div>

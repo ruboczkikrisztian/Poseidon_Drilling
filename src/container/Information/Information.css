@@ -42,7 +42,11 @@
 .app__specialMenu-menu_img img {
     width: 100%;
     height: auto;
+    transition: width 2s, height 2s, transform 2s;
 }
+
+.app__specialMenu-menu_img img:hover {
+    transform: rotate(45deg)}
 
 .app__specialMenu_menu_items {
     display: flex;

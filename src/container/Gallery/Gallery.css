@@ -155,4 +155,8 @@
     padding-right: 2rem;
     align-content: center;
   }
+
+  .app__myworks{
+    margin-right: 25px;
+  }
 }

@@ -6,6 +6,24 @@ import './Navbar.css';
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
+
+  const aszfDownloader = () => {
+    // using Java Script method to get PDF file
+    fetch('Ászf.pdf').then(response => {
+        response.blob().then(blob => {
+            // Creating new object of PDF file
+            const fileURL = window.URL.createObjectURL(blob);
+            // Setting various property values
+            let alink = document.createElement('a');
+            alink.href = fileURL;
+            alink.download = 'Ászf.pdf';
+            alink.click();
+        })
+    })
+}
+
+
+
   return (
     <nav className="app__navbar">
       <div className="app__navbar-logo">
@@ -17,6 +35,7 @@ const Navbar = () => {
         <li className="p__opensans"><a href="#services">Szolgáltatások</a></li>
         <li className="p__opensans"><a href="#information">Információk</a></li>
         <li className="p__opensans"><a href="#contact">Kapcsolat</a></li>
+        <li className="p__opensans"onClick={aszfDownloader}><>Ászf</></li>
       </ul>
       <div className="app__navbar-login">
         <a href="tel:+36702898494" className="p__opensans">📱(70) 289 8494</a>
@@ -34,6 +53,7 @@ const Navbar = () => {
               <li><a href="#services" onClick={() => setToggleMenu(false)}>Szolgáltatások</a></li>
               <li><a href="#information" onClick={() => setToggleMenu(false)}>Információk</a></li>
               <li><a href="#contact" onClick={() => setToggleMenu(false)}>Kapcsolat</a></li>
+              <li><a href="#aszf" onClick={aszfDownloader}>Ászf</a></li>
             </ul>
           </div>
         )}

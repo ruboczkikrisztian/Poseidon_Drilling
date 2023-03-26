@@ -26,7 +26,7 @@ const Footer = () => (
       </div>
 
       <div className="app__footer-links_work">
-        <h1 className="app__footer-headtext">Telefonos Elérhetőség</h1>
+        <h1 className="app__footer-headtext">Elérhetőség</h1>
         <p className="p__opensans">Hétfő - Péntek:</p>
         <p className="p__opensans">09:00 - 18:00</p>
         <p className="p__opensans">Szombat - Vasárnap:</p>

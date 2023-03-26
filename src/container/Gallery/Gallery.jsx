@@ -20,7 +20,7 @@ const Gallery = () => {
 
   return (
     <div className="app__gallery flex__center">
-      <div className="app__gallery-content">
+      <div className="app__wrapper_info app__myworks">
         <SubHeading title="Eddigi munkáim" />
         <h1 className="headtext__cormorant">Munkáim</h1>
         <p className="p__opensans" style={{ color: '#AAAAAA', marginTop: '2rem' }}><b>"Sose halaszd holnapra, amit holnapután is megtehetsz."</b></p>
